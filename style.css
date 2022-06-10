@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-bottom: 5px;
+}
+.container{
+    width: 800px;
+    height: 800px;
+}
+#gallery{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.btn{
+    border: none;
+    background: #afa;
+    color: #fff;
+    padding: 5px 20px;
+    margin-top: 1em;
+}
+

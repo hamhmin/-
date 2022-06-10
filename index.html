@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddd</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        
+        <section id="gallery">
+            <img src="https://via.placeholder.com/800x400/f80?text=1" alt="1">
+            <img src="https://via.placeholder.com/800x400/189?text=2" alt="2">
+            <img src="https://via.placeholder.com/800x400/14f?text=3" alt="3">
+        </section>
+        <button class="btn nextBtn" onclick="img_move()">다음 이미지</button>
+        <script>
+            function img_move() {
+                $('#gallery img:first').appendTo('#gallery');
+            }
+        // $(function(){
+        //     //nextBtn 누르면 1번 이미지 뒤로감
+        //     $('.nextBtn').click(function(){
+        //         img_move();
+        //     });
+        // });
+        </script>
+
+        <!-- 
+            향후업그레이드 ? 
+            next , prev 버튼으로 이미지 전환하기
+         -->
+    </div>
+</body>
+
+</html>
